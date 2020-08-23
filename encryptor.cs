@@ -11,7 +11,7 @@ namespace ConsoleApplication1
 
         static void Main(string[] args)
         {
-            string result = "";
+            string result = string.Empty;
             foreach (var arg in args)
             {
                 string resultInInt = Secret(arg);
