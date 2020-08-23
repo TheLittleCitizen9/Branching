@@ -14,9 +14,9 @@ namespace ConsoleApplication1
             string result = "";
             foreach (var c in args)
             {
-                string x = _secret(c);
-                x += 1;
-                result += (char)x;
+                string resultInInt = _secret(c);
+                resultInInt += 1;
+                result += (char)resultInInt;
             }
 
             Console.WriteLine(result);
