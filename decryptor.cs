@@ -11,15 +11,15 @@ namespace ConsoleApplication1
 
         static void Main(string[] args)
         {
-            string Res = "";
-            foreach (var c in args)
+            string result = string.Empty;
+            foreach (var arg in args)
             {
-                string x = _secret(c);
-                x -= 1;
-                Res += (char)x;
+                string resultInInt = Secret(arg);
+                resultInInt -= 1;
+                result += (char)resultInInt;
             }
 
-            Console.WriteLine(Res);
+            Console.WriteLine(result);
         }
     }
 }
