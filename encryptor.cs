@@ -12,9 +12,9 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
             string result = "";
-            foreach (var c in args)
+            foreach (var arg in args)
             {
-                string resultInInt = _secret(c);
+                string resultInInt = _secret(arg);
                 resultInInt += 1;
                 result += (char)resultInInt;
             }
