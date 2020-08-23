@@ -14,7 +14,7 @@ namespace ConsoleApplication1
             string result = "";
             foreach (var arg in args)
             {
-                string resultInInt = _secret(arg);
+                string resultInInt = Secret(arg);
                 resultInInt += 1;
                 result += (char)resultInInt;
             }
